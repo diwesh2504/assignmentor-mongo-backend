@@ -7,7 +7,8 @@ const object_id=mongodb.ObjectID;
 app.use(express.json());
 app.use(cors());
 //db config
-const db_URL="mongodb://localhost:27017";
+//const db_URL="mongodb://localhost:27017";
+const db_URL="mongodb+srv://admin:admin123@cluster0.sln75.mongodb.net/assign_mentor?retryWrites=true&w=majority" 
 
 app.post("/addmentor",async (req,res)=>{
     const client=await mongoClient.connect(db_URL);
